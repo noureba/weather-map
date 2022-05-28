@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Map</title>
+</head>
+<body>
+    <div class="weatherOut">
+        <h1><a href="/">Weather Map</a></h1>
+        <div class="weatherInfo">
+            <p id="degre"></p>
+            <div>
+                <p id="cityName"></p>
+                <p id="date"></p>
+            </div>
+            <img src="" alt="icon" id="wheatherIcon">
+        </div>
+    </div>
+    <div class="weatherPut">
+        <div class="put">
+            <input  type="text" id="city" placeholder="Location...">
+            <button id="btn"><img src="./img/search.png" width="30px"/></button>
+        </div>
+        <div class="options">
+            <p id="Paris">Paris</p>
+            <p id="London">London</p>
+            <p id="New">New York</p>
+            <p id="Agadir">Agadir</p>
+        </div>
+        <div class="Details">
+            <h2>Weather Details</h2>
+            <div>
+                <p>Main</p>
+                <p id="main"></p>
+            </div>
+            <div>
+                <p>description</p>
+                <p id="desc"></p>
+            </div>
+            <div>
+                <p>Speed</p>
+                <p id="speed"></p>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

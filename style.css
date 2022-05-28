@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    background:linear-gradient(rgb(0, 170, 248), rgb(0, 140, 255));
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: auto;
+    height: 100vh;
+    
+}
+.weatherOut{
+    position: relative;
+    width: 60%;
+}
+h1{
+    padding: 30px;
+
+}
+.weatherOut h1 a{
+    color: white;
+    font-size: 2rem;
+}
+.weatherPut{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+.put{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 500px;
+}
+.put input{
+    padding: 10px;
+    border: none;
+    background: none;
+    margin: 0 20px;
+    border-bottom: 1px solid #829F9A;
+    font-size: 24px;
+    color: white;
+    width: 100%;
+}
+.put input:focus{
+    outline: none;
+    border-bottom: 1px solid #00ffd5;
+}
+.put button{
+    padding: 30px;
+    max-width: 500px;
+    border: none;
+    background-color: #829F9A;
+    color: white;
+    font-size: 30px;
+}
+.weatherInfo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+
+}
+.weatherInfo >p{
+    font-size: 6rem;
+    margin: 20px;
+}
+.weatherInfo div p:first-child{
+    font-size: 2.5rem;
+}
+.weatherInfo i{
+    font-size: 3rem;
+    margin: 20px;
+}
+.options{
+    padding: 20px 0;
+}
+.options p{
+    font-size: 24px;
+    margin: 20px;
+    cursor: pointer;
+    color: rgb(196, 196, 196);
+}
+.options p:hover{
+    color : white
+}
+.Details{
+    color: white;
+    margin: 20px;
+}
+.Details div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    color: rgb(196, 196, 196);
+    font-size: 18px;
+}
+
+@media(max-width: 900px){
+    body{
+        flex-direction: column;
+        height: 100%;
+    }
+    .weatherInfo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: static;
+    }
+    .weatherOut{
+        width: 100%;
+    }
+    .weatherPut{
+        width: 100%;
+    }
+    .weatherInfo >p{
+        font-size: 3rem;
+        margin: 20px;
+    }
+    .weatherInfo div p:first-child{
+        font-size: 2.5rem;
+    }
+    .weatherInfo i{
+        font-size: 3rem;
+        margin: 20px;
+    }
+}
